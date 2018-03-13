@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+export default function(referralName, link) {
+  return `<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="utf-8"> <!-- utf-8 works for most cases -->
@@ -168,24 +169,45 @@
       </tr>
       <tr>
         <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-          <p style="margin: 0;">Hello ${ name },</p>
+          <p style="margin: 0;">Greetings from Export Online Team,</p>
         </td>
       </tr>
       <tr>
         <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-          <p style="margin: 0;">
-            Your password was successfully changed.
-          </p>
+          <p style="margin: 0;">Just wanted to let you know that your friend ${ referralName } thinks you might find our ICO interesting.</p>
         </td>
       </tr>
       <tr>
         <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-          <p style="margin: 0;">If this was not you, please contact us immediately at <a href="mailto:info@export.online">info@export.online</a></p>
+          <p style="margin: 0;">The international trading platform Export Online is created to solve the existing problems and difficulties of exporters associated with the start and conduct of activities in international trade.</p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
+          <p style="margin: 0;">The project combines disparate tools and databases in one-stop-shop mode, allowing clients to reduce their time for preparation and execution of an international transaction by more than 3 times and improve the efficiency of their business by increasing the productivity of their employees. No need to have a large staff or independently look for multidisciplinary specialists on outsource, just connect to the Export Online platform and implement the whole process there.</p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
+          <p style="margin: 0;">If that sounds interesting, ${ referralName } recommends you to register for the upcoming ICO and access more details about the project.</p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+            <tr>
+              <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td">
+                <a href="${ link }" style="background: #182d66; border: 12px solid #182d66; font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 20px; text-align: center; text-decoration: none; display: block; border-radius: 4px; font-weight: bold;" class="button-a">
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ffffff;">Register at export.online</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
       <tr>
         <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 13px; line-height: 22px; color: #111111; text-align: left; font-weight: 300;">
-          <p style="margin: 0;">Stay safe,<br/>Export Online Team</p>
+          <p style="margin: 0;">Have an awesome day,<br/>Export Online Team</p>
         </td>
       </tr>
       <tr>
@@ -200,7 +222,6 @@
         </td>
       </tr>
 		</table>
-    
     <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="560" style="margin: auto;" class="email-container">
       <!-- 3 Even Columns : BEGIN -->
 			<tr>
@@ -255,3 +276,5 @@
     </center>
 </body>
 </html>
+`;
+}

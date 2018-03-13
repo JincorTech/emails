@@ -1,4 +1,5 @@
-  <!DOCTYPE html>
+export default function(name, datetime) {
+  return `<!DOCTYPE html>
   <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
   <head>
   	<meta charset="utf-8"> <!-- utf-8 works for most cases -->
@@ -191,51 +192,43 @@
   		</td>
   	  </tr>
 
-        <tr>
-          <td bgcolor="#ffffff" style="padding: 20px; text-align: center;"></td>
-        </tr>
+      <tr>
+        <td bgcolor="#ffffff" style="padding: 20px; text-align: center;"></td>
+      </tr>
 
-        <tr>
-          <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-            <p style="margin: 0;">Hello ${ name },</p>
-          </td>
-        </tr>
+      <tr>
+        <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
+          <p style="margin: 0;">Hello ${ name },</p>
+        </td>
+      </tr>
 
         <tr>
           <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
             <p style="margin: 0;">
-              You (or someone who looks exactly like you) requested login verification code at <b>${ datetime }</b><br/>
-              The attempt was made from the following IP address: <b>${ ip }</b><br/>
-              Check out your code in Authenticator
+              You are successfully verified at <b>${ datetime }</b><br/>
             </p>
           </td>
         </tr>
 
         <tr>
-          <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-            <p style="margin: 0;">If this was not you, please contact us immediately at <a href="mailto:info@export.online">info@export.online</a></p>
+          <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 13px; line-height: 22px; color: #111111; text-align: left; font-weight: 300;">
+            <p style="margin: 0;">Stay safe,<br/>Export Online Team</p>
           </td>
         </tr>
 
-  			<tr>
-  			<td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 13px; line-height: 22px; color: #111111; text-align: left; font-weight: 300;">
-  				<p style="margin: 0;">Stay safe,<br/>Export Online Team</p>
-  			</td>
-  			</tr>
+        <tr>
+        <td bgcolor="#ffffff" style="padding: 0 35px; font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #111111">
+          <hr style="margin: 0; border: 1px solid #e0e0e0; border-top: 0;"/>
+        </td>
+        </tr>
 
-  			<tr>
-  			<td bgcolor="#ffffff" style="padding: 0 35px; font-family: Helvetica, Arial, sans-serif; font-size: 15px; color: #111111">
-  				<hr style="margin: 0; border: 1px solid #e0e0e0; border-top: 0;"/>
-  			</td>
-  			</tr>
-
-  			<tr>
-  			<td bgcolor="#ffffff" style="padding: 30px 20px 30px; font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 27px; color: #111111; text-align: center; font-weight: 400;">
-  				<h5 style="margin: 0; text-align: center; color: #111111; font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 27px; font-weight: 400;">Have any questions?</h5>
-  				<a style="display: block; text-decoration: none; text-align: center; color: #0080ff; font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 27px; font-weight: 400;" href="mailto:info@export.online">info@export.online</a>
-  			</td>
-  			</tr>
-  			</table>
+        <tr>
+        <td bgcolor="#ffffff" style="padding: 30px 20px 30px; font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 27px; color: #111111; text-align: center; font-weight: 400;">
+          <h5 style="margin: 0; text-align: center; color: #111111; font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 27px; font-weight: 400;">Have any questions?</h5>
+          <a style="display: block; text-decoration: none; text-align: center; color: #0080ff; font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 27px; font-weight: 400;" href="mailto:info@export.online">info@export.online</a>
+        </td>
+        </tr>
+        </table>
 
         <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="560" style="margin: auto;" class="email-container">
           <!-- 3 Even Columns : BEGIN -->
@@ -289,6 +282,8 @@
           <!-- 3 Even Columns : END -->
         </table>
 
-  		</center>
-  	</body>
-  	</html>
+      </center>
+    </body>
+    </html>
+    `;
+  }

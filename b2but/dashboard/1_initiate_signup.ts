@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+export default function(name, link) {
+  return `<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="utf-8"> <!-- utf-8 works for most cases -->
@@ -197,31 +198,39 @@
 
       <tr>
         <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-          <p style="margin: 0;">Congratulations, ${ name }</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 24px; line-height: 34px; color: #111111; text-align: left; font-weight: 400;">
-          <p style="margin: 0;">You are all set to take part in Export Online’s ICO</p>
+          <p style="margin: 0;">Hello ${ name }</p>
         </td>
       </tr>
 
       <tr>
         <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-          <p style="margin: 0;">Thank you for joining us!</p>
+          <p style="margin: 0;">Please confirm your email address to get access to the Contributor Account at export.online by putting verification code: <b>{{{CODE}}}</b>, or by clicking on the link below</p>
+        </td>
+      </tr>
+
+      <tr>
+        <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin: auto">
+            <tr>
+              <td style="border-radius: 3px; background: #222222; text-align: center;" class="button-td">
+                <a href="${ link }" style="background: #182d66; border: 12px solid #182d66; font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 20px; text-align: center; text-decoration: none; display: block; border-radius: 4px; font-weight: bold;" class="button-a">
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ffffff;">Verify Email Address</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
 
       <tr>
         <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-          <p style="margin: 0;">We really believe that by combining our efforts we can tremendously change the blockchain industry and the way how businesses were traditionally operating. And we are really excited to greet and personally say hi to YOU, one of those who could contribute to make it happen.</p>
+          <p style="margin: 0;">If you did not sign up for this account you can ignore this email and the account will be deleted.</p>
         </td>
       </tr>
 
       <tr>
         <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 13px; line-height: 22px; color: #111111; text-align: left; font-weight: 300;">
-          <p style="margin: 0;">Sincerely yours,<br/>Export Online`s team</p>
+          <p style="margin: 0;">Stay safe,<br/>Export Online Team</p>
         </td>
       </tr>
 
@@ -294,3 +303,5 @@
     </center>
 </body>
 </html>
+`;
+}
