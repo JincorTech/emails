@@ -1,0 +1,13 @@
+@import 'settings';
+@import 'foundation-emails';
+
+@import 'template/template';
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+table.container {
+  background-color: transparent !important;
+}
