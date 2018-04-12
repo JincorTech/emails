@@ -1,0 +1,108 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="{{root}}css/app.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{{subject}}</title>
+  <!-- <style> -->
+</head>
+
+<body>
+  <span class="preheader">{{description}}</span>
+  <table class="body">
+    <tr>
+      <td class="center" align="center" valign="top">
+        <center>
+          <spacer size="30"></spacer>
+          <container>
+            <spacer size="16"></spacer>
+
+            <row>
+              <columns>
+                <img class="logo" src="https://s3.eu-west-2.amazonaws.com/ico-dashboard/mpp_logo.png" alt="My Pizza Pie dashboard">
+              </columns>
+            </row>
+
+            <spacer size="16"></spacer>
+
+            {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened emails are created. --}} {{> body}}
+
+            <row class="collapsed footer">
+              <columns>
+                <spacer size="16"></spacer>
+                <p>
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="560" style="margin-left: 40px;" class="email-container">
+                    <!-- 3 Even Columns : BEGIN -->
+                    <tr>
+                      <td align="center" valign="top" style="padding: 50px 10px 50px;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <!-- Column : BEGIN -->
+                            <td width="14.2%" class="social">
+                              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                  <td style="text-align: center">
+                                    <a href="https://t.me/joinchat/CucAN1BTnZyQckwHkTuTng">
+                                      <img src="https://s3.eu-west-2.amazonaws.com/jincor-ico/email-assets/telegram.png" width="50" height="50" alt="alt_text"
+                                        border="0" class="fluid" style="height: auto; background: transparent; font-family: sans-serif; font-size: 15px; line-height: 20px; color: transparent;">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td width="14.2%" class="social">
+                              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                  <td style="text-align: center">
+                                    <a href="https://twitter.com/my_pizza_pie">
+                                      <img src="https://s3.eu-west-2.amazonaws.com/jincor-ico/email-assets/twitter.png" width="50" height="50" alt="alt_text" border="0"
+                                        class="fluid" style="height: auto; background: transparent; font-family: sans-serif; font-size: 15px; line-height: 20px; color: transparent;">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- Column : END -->
+                            <!-- Column : BEGIN -->
+                            <td width="14.2%" class="social">
+                              <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                                <tr>
+                                  <td style="text-align: center">
+                                    <a href="https://www.facebook.com/mypizzapie">
+                                      <img src="https://s3.eu-west-2.amazonaws.com/jincor-ico/email-assets/facebook.png" width="50" height="50" alt="alt_text"
+                                        border="0" class="fluid" style="height: auto; background: transparent; font-family: sans-serif; font-size: 15px; line-height: 20px; color: transparent;">
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- Column : END -->
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <!-- 3 Even Columns : END -->
+                  </table>
+                </p>
+              </columns>
+            </row>
+
+          </container>
+        </center>
+      </td>
+    </tr>
+  </table>
+  <!-- prevent Gmail on iOS font size manipulation -->
+  <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+</body>
+
+</html>
