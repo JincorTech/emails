@@ -3,27 +3,32 @@ subject: Initiate signIn
 ---
 <!-- begin -->
 
-<row>
-  <columns>
-    <p>Hello ${ name },</p>
-    <p>
-      You (or someone who looks exactly like you) requested login verification code at <b>${ datetime }</b><br/>
+<tr>
+  <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
+    <p style="margin: 0;">Hello ${ name },</p>
+  </td>
+</tr>
+
+<tr>
+  <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
+    <p style="margin: 0;">
+      You (or someone who looks exactly like you) requested login verification code at <b>${ datetime }</b> PST Time<br/>
       The attempt was made from the following IP address: <b>${ ip }</b><br/>
       Login operation verification code is: <b>{{{CODE}}}</b>
     </p>
-  </columns>
-</row>
+  </td>
+</tr>
 
-<row>
-  <columns>
-    <p>If this was not you, please contact us immediately at <a href="mailto:support@mypizzapie.io">support@mypizzapie.io</a></p>
-  </columns>
-</row>
+<tr>
+  <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
+    <p style="margin: 0;">If this was not you, please contact us immediately at <a href="mailto:support@mypizzapie.io">support@mypizzapie.io</a></p>
+  </td>
+</tr>
 
-<row>
-  <columns>
-    <p>Stay safe,<br/>My Pizza Pie's team</p>
-  </columns>
-</row>
+<tr>
+  <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 13px; line-height: 22px; color: #111111; text-align: left; font-weight: 300;">
+    <p style="margin: 0;">Stay safe,<br/>My Pizza Pie Team</p>
+  </td>
+</tr>
 
 <!-- end -->
