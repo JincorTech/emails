@@ -1,0 +1,18 @@
+@import 'settings';
+@import 'foundation-emails';
+
+@import 'template/template';
+
+.st_logo {
+  font-size: 36px;
+  font-family: monospace;
+}
+
+.warning {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+table.container {
+  background-color: transparent !important;
+}
