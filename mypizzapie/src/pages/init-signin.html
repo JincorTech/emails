@@ -5,15 +5,15 @@ subject: Initiate signIn
 
 <tr>
   <td bgcolor="#ffffff" style="padding: 0 20px 20px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
-    <p style="margin: 0;">Hello ${ name },</p>
+    <p style="margin: 0;">Hello ${ data.name },</p>
   </td>
 </tr>
 
 <tr>
   <td bgcolor="#ffffff" style="padding: 0 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 30px; color: #111111; text-align: left; font-weight: 300;">
     <p style="margin: 0;">
-      You (or someone who looks exactly like you) requested login verification code at <b>${ datetime }</b> Time<br/>
-      The attempt was made from the following IP address: <b>${ ip }</b><br/>
+      You (or someone who looks exactly like you) requested login verification code at <b>${ data.datetime }</b> Time<br/>
+      The attempt was made from the following IP address: <b>${ data.ip }</b><br/>
       Login operation verification code is: <b>{{{CODE}}}</b>
     </p>
   </td>
