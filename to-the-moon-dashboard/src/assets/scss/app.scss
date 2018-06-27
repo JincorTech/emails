@@ -1,0 +1,22 @@
+@import 'settings';
+@import 'foundation-emails';
+
+@import 'template/template';
+
+.st_logo {
+  width: 80px;
+  display: block;
+}
+
+.st_logo > img {
+  width: 100%;
+}
+
+.warning {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+table.container {
+  background-color: transparent !important;
+}
