@@ -1,0 +1,19 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+body,
+html, 
+.body {
+  background: #fff !important;
+}
+
+.container {
+  background: #fff;
+  box-shadow: rgba(32, 41, 50, 0.12) 0px 16px 48px;
+}
+
+p.lead {
+  font-weight: 900;
+  margin-bottom: 1em;
+}
